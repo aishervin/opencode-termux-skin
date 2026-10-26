@@ -561,7 +561,7 @@
     URL.revokeObjectURL(url);
   });
   $("openInstall").addEventListener("click", async () => {
-    const cmd = 'curl -fsSL https://raw.githubusercontent.com/aishervin/SHENhero/main/install.sh | bash';
+    const cmd = 'curl -fsSL https://raw.githubusercontent.com/aishervin/SHENhero/main/termux-skin/install.sh | bash';
     try {
       await navigator.clipboard.writeText(cmd);
       toast("Install command copied");

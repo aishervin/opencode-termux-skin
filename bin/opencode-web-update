@@ -2,7 +2,8 @@
 set -euo pipefail
 
 REPO="${OC_SKIN_REPO:-aishervin/SHENhero}"
-RAW="https://raw.githubusercontent.com/$REPO/main"
+BASE="${OC_SKIN_BASE:-termux-skin}"
+RAW="https://raw.githubusercontent.com/$REPO/main/$BASE"
 
 WEB_DIR="${HOME:+$HOME/.opencode-web}"
 WEB_DIR="${WEB_DIR:-$PREFIX/var/opencode-web}"

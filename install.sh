@@ -2,7 +2,8 @@
 set -euo pipefail
 
 REPO="${OC_SKIN_REPO:-aishervin/SHENhero}"
-RAW="https://raw.githubusercontent.com/$REPO/main"
+BASE="${OC_SKIN_BASE:-termux-skin}"
+RAW="https://raw.githubusercontent.com/$REPO/main/$BASE"
 
 red() { printf '\033[0;31m%s\033[0m\n' "$*" >&2; }
 grn() { printf '\033[0;32m%s\033[0m\n' "$*"; }

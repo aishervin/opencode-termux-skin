@@ -1,4 +1,4 @@
-# OpenCode Termux Skin
+# SHENhero Termux Skin
 
 A graphical skin for the **real** opencode web UI on Termux, plus a small local
 proxy that serves it. Every user keeps their own opencode installation, their
@@ -10,10 +10,13 @@ own models, providers, auth and sessions. This repo only changes the look.
 - Farsi/Persian RTL fix built in: auto direction, correct joining, Arabic font
 - One command install, one command to open, one command to update
 
+This folder lives at `termux-skin/` inside the SHENhero repo, next to the
+Android app. Only this folder is needed for the Termux UI.
+
 ## Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/aishervin/SHENhero/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/aishervin/SHENhero/main/termux-skin/install.sh | bash
 ```
 
 If opencode is already installed it is left alone. If it is missing, the
@@ -104,12 +107,12 @@ landing page; the full UI remains opencode's own.
 
 ## Use your own fork
 
-1. Fork or create a repo with these files.
-2. Edit `skin/skin.css` and `index.html`.
+1. Fork or create a repo with this `termux-skin/` folder.
+2. Edit `termux-skin/skin/skin.css` and `termux-skin/index.html`.
 3. Users run:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/<you>/<repo>/main/install.sh | OC_SKIN_REPO=<you>/<repo> bash
+curl -fsSL https://raw.githubusercontent.com/<you>/<repo>/main/termux-skin/install.sh | OC_SKIN_REPO=<you>/<repo> bash
 ```
 
 or edit the default in `install.sh`, `bin/opencode-web-update` and the install
@@ -125,5 +128,5 @@ command in `index.html`.
 
 ## License
 
-MIT for the skin, studio, proxy and launchers in this repo. opencode itself is
-licensed by its authors and is installed separately.
+MIT for the skin, studio, proxy and launchers in this folder. opencode itself
+is licensed by its authors and is installed separately.
