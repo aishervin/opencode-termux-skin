@@ -13,7 +13,7 @@ own models, providers, auth and sessions. This repo only changes the look.
 ## Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/aishervin/opencode-termux-skin/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/aishervin/SHENhero/main/install.sh | bash
 ```
 
 If opencode is already installed it is left alone. If it is missing, the

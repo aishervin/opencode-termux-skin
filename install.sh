@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/env bash
 set -euo pipefail
 
-REPO="${OC_SKIN_REPO:-aishervin/opencode-termux-skin}"
+REPO="${OC_SKIN_REPO:-aishervin/SHENhero}"
 RAW="https://raw.githubusercontent.com/$REPO/main"
 
 red() { printf '\033[0;31m%s\033[0m\n' "$*" >&2; }
